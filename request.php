@@ -1,3 +1,11 @@
+<?php
+/*
+*   Project: LogDrive
+*   Author: John Hart
+*   Repo:  https://github.com/johnhart96/log-drive
+*   Licence: GNU Public Licence
+*/
+?>
 <h1>Request <?php echo ID; ?></h1>
 <?php
 // Look up request

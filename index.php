@@ -1,4 +1,10 @@
 <?php
+/*
+*   Project: LogDrive
+*   Author: John Hart
+*   Repo:  https://github.com/johnhart96/log-drive
+*   Licence: GNU Public Licence
+*/
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;

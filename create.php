@@ -1,3 +1,11 @@
+<?php
+/*
+*   Project: LogDrive
+*   Author: John Hart
+*   Repo:  https://github.com/johnhart96/log-drive
+*   Licence: GNU Public Licence
+*/
+?>
 <h1>Create log request</h1>
 <?php
 if( isset( $_POST['submit'] ) ) {
