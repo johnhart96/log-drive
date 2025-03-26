@@ -1,0 +1,15 @@
+RewriteEngine On
+
+# Rewrite for /a/b/c to /index.php?page=a&id=b&file=c
+RewriteRule ^([^/]+)/([^/]+)/([^/]+)/?$ index.php?page=$1&id=$2&file=$3 [L,QSA]
+
+# Rewrite for /a/b to /index.php?page=a&id=b
+RewriteRule ^([^/]+)/([^/]+)/?$ index.php?page=$1&id=$2 [L,QSA]
+
+# Rewrite for /a to /index.php?page=a
+RewriteRule ^([^/]+)/?$ index.php?page=$1 [L,QSA]
+
+# Ensure local assets like CSS are not affected by the rewrite
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
